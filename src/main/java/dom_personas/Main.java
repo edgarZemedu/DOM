@@ -31,9 +31,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args)  {
-        
-        
-        
+
         try { 
             //Elementos a instanciar
             DocumentBuilderFactory factoryDocument = DocumentBuilderFactory.newInstance();
@@ -44,28 +42,29 @@ public class Main {
             Document documento = implementacionDOM.createDocument (null, "personas",null);
             documento.setXmlVersion("1.0");
             
-            Element elemento = documento.createElement("persona");
-            documento.getDocumentElement().appendChild(elemento);
+
             int contadorId = 0;
-            while (contadorId != 5) {   
-            
-            Attr attID=documento.createAttribute("id");
+            while (contadorId != 5) {
+                Element elemento = documento.createElement("persona");
+                documento.getDocumentElement().appendChild(elemento);
+
+                Attr attID=documento.createAttribute("id");
                 attID.setValue(String.valueOf(contadorId));
                 elemento.setAttributeNode(attID);
-            //Crear elemento con texto
-            String nombre = "ANA";
-            String elementoApellido = "Carlos"; 
-            int eleEdad = 23;
-            int eleDep = 001;
-            double eleSalario = 2100; 
-            
-            addElementos(documento, elemento, "nombre", nombre);
-            addElementos(documento, elemento, "apellido", nombre);
-            addElementos(documento, elemento, "edad", String.valueOf(eleEdad));
-            addElementos(documento, elemento, "dep", String.valueOf(eleDep));
-            addElementos(documento, elemento, "salario", String.valueOf(eleSalario));
-            
-            
+
+                //Crear elemento con texto
+                String nombre = "ANA";
+                String elementoApellido = "Carlos";
+                int eleEdad = 23;
+                int eleDep = 001;
+                double eleSalario = 2100;
+
+                addElementos(documento, elemento, "nombre", nombre);
+                addElementos(documento, elemento, "apellido", elementoApellido);
+                addElementos(documento, elemento, "edad", String.valueOf(eleEdad));
+                addElementos(documento, elemento, "dep", String.valueOf(eleDep));
+                addElementos(documento, elemento, "salario", String.valueOf(eleSalario));
+
                 contadorId++;                      
             }
             //Crear fichero XML a partir del documento DOM
@@ -87,12 +86,13 @@ public class Main {
         }
     }
     
-    static void addElementos(Document documento,Element elementos,String hijo,String valor){
-        
-            elementos = documento.createElement(hijo);
-                elementos.appendChild(elementos);
-            Text valorNombre = documento.createTextNode(valor);
-            elementos.appendChild (valorNombre);   
+    static void addElementos(Document documento,Element elementos,String hijo,String valor) {
 
+        Element e = documento.createElement(hijo);
+        elementos.appendChild(e);
+        Text texto = documento.createTextNode(valor);
+        e.appendChild(texto);
+
+    }
     
 }
