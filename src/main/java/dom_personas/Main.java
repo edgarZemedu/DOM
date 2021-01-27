@@ -44,29 +44,95 @@ public class Main {
             
 
             int contadorId = 0;
-            while (contadorId != 5) {
-                Element elemento = documento.createElement("persona");
-                documento.getDocumentElement().appendChild(elemento);
+            /*********************persona id = 0***********************/
+                Element elemento1 = documento.createElement("persona");
+                documento.getDocumentElement().appendChild(elemento1);
 
-                Attr attID=documento.createAttribute("id");
-                attID.setValue(String.valueOf(contadorId));
-                elemento.setAttributeNode(attID);
+                Attr id1=documento.createAttribute("id");
+                id1.setValue(String.valueOf(contadorId++));
+                elemento1.setAttributeNode(id1);
 
                 //Crear elemento con texto
                 String nombre = "ANA";
                 String elementoApellido = "Carlos";
                 int eleEdad = 23;
-                int eleDep = 001;
+                int eleDep = 40;
                 double eleSalario = 2100;
 
-                addElementos(documento, elemento, "nombre", nombre);
-                addElementos(documento, elemento, "apellido", elementoApellido);
-                addElementos(documento, elemento, "edad", String.valueOf(eleEdad));
-                addElementos(documento, elemento, "dep", String.valueOf(eleDep));
-                addElementos(documento, elemento, "salario", String.valueOf(eleSalario));
+                addElementos(documento, elemento1, "nombre", nombre);
+                addElementos(documento, elemento1, "apellido", elementoApellido);
+                addElementos(documento, elemento1, "edad", String.valueOf(eleEdad));
+                addElementos(documento, elemento1, "dep", String.valueOf(eleDep));
+                addElementos(documento, elemento1, "salario", String.valueOf(eleSalario));
 
-                contadorId++;                      
-            }
+
+            /**********************persona id = 1**********************/
+            Element elemento2 = documento.createElement("persona");
+            documento.getDocumentElement().appendChild(elemento2);
+
+            Attr id2=documento.createAttribute("id");
+            id2.setValue(String.valueOf(contadorId++));
+            elemento2.setAttributeNode(id2);
+
+            //Crear elemento con texto
+            String nombr = "PAN";
+            String apellidos = "Pin";;
+            int dep = 45;;
+            int edad = 32;
+            double salario = 2500.0;
+
+            addElementos(documento, elemento2, "nombre", nombr);
+            addElementos(documento, elemento2, "apellido", apellidos);
+            addElementos(documento, elemento2, "edad", String.valueOf(edad));
+            addElementos(documento, elemento2, "dep", String.valueOf(dep));
+            addElementos(documento, elemento2, "salario", String.valueOf(salario));
+
+
+            /**********************persona id = 2**********************/
+            Element elemento3 = documento.createElement("persona");
+            documento.getDocumentElement().appendChild(elemento3);
+
+            Attr id3 = documento.createAttribute("id");
+            id3.setValue(String.valueOf(contadorId++));
+            elemento3.setAttributeNode(id3);
+
+            //Crear elemento con texto
+            String nomb = "TOM";
+            String apellido = "Rois";
+            int depa = 45;;
+            int eda = 2;
+            double salari = 2200.0;
+
+            addElementos(documento, elemento3, "nombre", nomb);
+            addElementos(documento, elemento3, "apellido", apellido);
+            addElementos(documento, elemento3, "edad", String.valueOf(eda));
+            addElementos(documento, elemento3, "dep", String.valueOf(depa));
+            addElementos(documento, elemento3, "salario", String.valueOf(salari));
+
+
+            /**********************persona id = 3**********************/
+            Element elemento4 = documento.createElement("persona");
+            documento.getDocumentElement().appendChild(elemento4);
+
+            Attr id4 = documento.createAttribute("id");
+            id4.setValue(String.valueOf(contadorId++));
+            elemento4.setAttributeNode(id4);
+
+            //Crear elemento con texto
+            String nom = "JUAN";
+            String apellid = "TIN";
+            int depar = 40;;
+            int edade = 29;
+            double salar = 2000.50;
+
+            addElementos(documento, elemento4, "nombre", nom);
+            addElementos(documento, elemento4, "apellido", apellid);
+            addElementos(documento, elemento4, "edad", String.valueOf(edade));
+            addElementos(documento, elemento4, "dep", String.valueOf(depar));
+            addElementos(documento, elemento4, "salario", String.valueOf(salar));
+
+            contadorId = 0;
+
             //Crear fichero XML a partir del documento DOM
             Source sourceDOM = new DOMSource(documento);
             Result resultado = new StreamResult(new File("personas.xml"));
@@ -77,7 +143,7 @@ public class Main {
             Result consola=new StreamResult(System.out);
             transformer.transform(sourceDOM, consola);
 
-            
+            contadorId = 0;
             
         } catch (ParserConfigurationException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
