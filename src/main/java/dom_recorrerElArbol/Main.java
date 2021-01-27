@@ -29,11 +29,12 @@ public class Main {
             //3º Elimina nodos vacíos
             documento.getDocumentElement().normalize();
 
+
+            //Recorrer el árbol sin conocer sus etiquetas pero conociendo los niveles a analizar.
+            /*
             System.out.println("Elemento raíz del documento XML: "+documento.getDocumentElement().getNodeName());
             NodeList listaP = documento.getElementsByTagName("persona");
             System.out.println("El nº de elementos de tipo persona en el DOM es "+ listaP.getLength());
-
-            //para conertir en elemento el node
             for (int i=0; i < listaP.getLength(); i++){
                 Node nodeP = listaP.item(i);
                 if (nodeP.getNodeType() == Node.ELEMENT_NODE){
@@ -57,6 +58,44 @@ public class Main {
                     }
                 }
             }
+            */
+
+            //Recorrer el árbol con un método recursivo. No se conocen ni las etiquetas/tags ni los niveles.
+            NodeList l = documento.getChildNodes();
+            for (int i=0; i < l.getLength(); i++) {
+                Node n = l.item(i);
+                if(n.getNodeType() == Node.ELEMENT_NODE) {
+                    System.out.println(n.getNodeName());
+                    //nodo raiz personas
+                    NodeList li = n.getChildNodes();
+                    for (int j=0; j < li.getLength(); j++){
+                        Node nodeE = li.item(j);
+                        if (nodeE.getNodeType() == Node.ELEMENT_NODE) {
+                            Element e = (Element) nodeE;
+                            //primer nivel persona
+                            System.out.println(e.getTagName());//nodeE.getNodeName()
+                            NamedNodeMap listaAtri = nodeE.getAttributes();
+                            for (int a=0; a < listaAtri.getLength(); a++){
+                                System.out.println(listaAtri.item(a).getNodeName()+": "+ listaAtri.item(a).getNodeValue());
+                            }
+                            NodeList lis = nodeE.getChildNodes();
+                            for (int u=0; u < lis.getLength(); u++){
+                                Node no = lis.item(u);
+                                if (no.getNodeType() == Node.ELEMENT_NODE) {
+                                    System.out.print(no.getNodeName()+": ");
+                                    System.out.println(no.getTextContent());
+
+                                }
+                            }
+                            System.out.println();
+
+                        }
+                    }
+                }
+
+            }
+
+
 
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
