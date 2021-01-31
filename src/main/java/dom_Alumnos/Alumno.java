@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.lang.invoke.StringConcatFactory;
 
 public class Alumno implements Serializable {
-    //private static final long serialVersionUID = -9223365651070458532L;
-    //private static final long serialVersionUID = 6529685098267757690L;
     private String nombre,apellidos,curso;
     private int edad;
 
