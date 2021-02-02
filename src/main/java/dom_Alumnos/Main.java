@@ -8,7 +8,9 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
@@ -26,6 +28,7 @@ public class Main {
         boolean fin = false; //para controlar la salida del programa
         File ficheroObjetos = null; //para almacenar la instancia del fichero serializado de objetos
         ArrayList<Alumno> listAlumnos = null;
+        boolean lector = false;
 
         do {
             switch (menu()){
@@ -40,11 +43,20 @@ public class Main {
                         ManejoFicheros.leerFS(nombreFichero);
                     break;
                 case 3:
-                        crearArbolDOM(listAlumnos,documento);
+                    if (!lector) {
+                        crearArbolDOM(listAlumnos, documento);
                         System.out.println("Éxito!!!! Se ha creado el arbol DOM *******");
+                        lector = true;
+                    }  else{
+                        System.out.println("Ya está creado.....");
+                    }
                     break;
                 case 4:
                         mostradorXML(listAlumnos,documento);
+
+                    break;
+                case 5:
+
                     break;
 
             }
@@ -62,10 +74,10 @@ public class Main {
         do {
             ArrayList<String> misOpciones = new ArrayList<String>() {
                 {
-                    add("Crear un fichero secuencial de objetos de tipo Alumno");
-                    add("Mostrar los datos de los objetos del fichero Alumno");
-                    add("Crear el arbol DOM a partir del fichero de objetos Alumno");
-                    add("Mostrar el contenido del árbol DOM en pantalla en formato XML");
+                    add("Crear un fichero secuencial de objetos ");
+                    add("Mostrar los datos del fichero Alumno");
+                    add("Crear el arbol DOM a partir del fichero ");
+                    add("Mostrar en pantalla en formato XML");
                     add("Crear un fichero XML a partir del DOM creado anteriormente ");
                     add("Recorrer el árbol DOM conociendo los tags/etiquetas de los elementos");
                     add("Recorrer el árbol DOM conociendo solo conociendo los niveles");
@@ -92,6 +104,7 @@ public class Main {
         return opcion;
     }
     static Document crearDOM(ArrayList<Alumno> listAlumnos){
+
         //primero añadimos datos al ArrayList<Alumno>
         listAlumnos = ManejoFicheros.añadirDatos();
         //Elementos a instanciar
@@ -106,20 +119,20 @@ public class Main {
         //documento raiz Alumnos
         Document documento = implementacionDOM.createDocument(null, "Alumnos",null);
         //Elemento hijo Alumno y sus atributos(curso)
-
+            //añadirAtributos(documento,elemento,nombre,valor);
         for (int i = 0; i < listAlumnos.size(); i++) {
             //añadir elemntos *alumno*
             Element elemento = documento.createElement("Alumno");
             documento.getDocumentElement().appendChild(elemento);
             //añadir el atributo *curso*
-            añadirAtributos(documento, elemento, "Alumno", listAlumnos.get(i).getCurso());
+            añadirAtributos(documento, elemento, "curso", listAlumnos.get(i).getCurso());
             //añadimos los subElementos de *alumno* con su valor
             crearElementos(documento,elemento,"nombre",listAlumnos.get(i).getNombre());
             crearElementos(documento,elemento,"apellidos",listAlumnos.get(i).getApellidos());
             crearElementos(documento,elemento,"edad",(String.valueOf(listAlumnos.get(i).getEdad())));
 
         }
-        return  documento;
+        return documento;
     }
 
     static void crearArbolDOM(ArrayList<Alumno> listAlumnos,Document documento){
@@ -155,7 +168,10 @@ public class Main {
     }
     //mostrar el contenido del árbol DOM
     static void mostradorXML(ArrayList<Alumno> listAlumnos,Document documento) {
+       // boolean lector = false;
+        //if (new File("Alumnos.xml").exists()) {
         documento = crearDOM(listAlumnos);
+
         Source sourceDOM = new DOMSource(documento);
         Transformer transformer = null;
         try {
@@ -164,8 +180,9 @@ public class Main {
             transformer.transform(sourceDOM, consola);
 
         } catch (TransformerException e) {
-            System.out.println("Error número 2 al sacar el XML "+e.toString());
+            System.out.println("Error número 2 al sacar el XML (mostrarXML) -> "+e.toString());
         }
+
     }
 
 }

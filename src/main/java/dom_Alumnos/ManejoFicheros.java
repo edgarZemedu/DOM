@@ -6,33 +6,30 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class ManejoFicheros {
+
     static ArrayList<Alumno> listAlumnos = new ArrayList<>();
     static Alumno a = null;
     //    añadir datos para empezar el programa
     static ArrayList<Alumno> añadirDatos() {
 
-        Alumno a = new Alumno("DAM", "Rocio", "Gracia Márquez", 31);
-         //new ArrayList<Alumno>().add(0,a);
-        listAlumnos.add(0,a);
-        a = new Alumno("DAM", "Carlos", "Juanito Paco", 28);
-        listAlumnos.add(1,a);
-        a = new Alumno("DAW", "Antonio", "Garcia", 35);
-        listAlumnos.add(2,a);
-        a = new Alumno("ASIR", "Rocio", "Marcos", 35);
-        listAlumnos.add(3,a);
-        a = new Alumno("DAM", "Cris", "Marcote", 33);
-        listAlumnos.add(4,a);
-        a = new Alumno("DAW", "Jose Luis", "Juanito", 37);
-        listAlumnos.add(5,a);
-        a = new Alumno("ASIR", "Ana", "Juanito", 45);
-        listAlumnos.add(6,a);
+        if (listAlumnos.isEmpty() || a == null) {
 
-       //for (int i=0; i < listAlumnos.size() ; i++){
-           //listAlumnos.add(a);
-
-//            System.out.println(listAlumnos.get(i).getCurso()+" "+listAlumnos.get(i).getNombre()+""+
-//                    " "+listAlumnos.get(i).getApellidos()+" "+listAlumnos.get(i).getEdad());
-       //}
+            a = new Alumno("DAM", "Rocio", "Gracia Márquez", 30);
+            /*new ArrayList<Alumno>().add(0,a);*/
+            listAlumnos.add(0, a);
+            a = new Alumno("DAM", "Carlos", "Juanito Paco", 31);
+            listAlumnos.add(1, a);
+            a = new Alumno("DAW", "Antonio", "Garcia", 32);
+            listAlumnos.add(2, a);
+            a = new Alumno("ASIR", "Rocio", "Marcos", 33);
+            listAlumnos.add(3, a);
+            a = new Alumno("DAM", "Cris", "Marcote", 34);
+            listAlumnos.add(4, a);
+            a = new Alumno("DAW", "Jose Luis", "Juanito", 35);
+            listAlumnos.add(5, a);
+            a = new Alumno("ASIR", "Ana", "Juanito", 36);
+            listAlumnos.add(a);
+        }
         return listAlumnos;
     }
 
@@ -53,7 +50,7 @@ public class ManejoFicheros {
                 añadirDatos();
                 miOOS.writeObject(listAlumnos);
                 miOOS.flush();
-                System.out.println("------> Fichero creado");
+                System.out.println("Éxito ------> Fichero creado");
             } catch (IOException e) {
                 System.out.println("Se ha producido un error 1 " + e.toString());
             }
@@ -104,6 +101,7 @@ public class ManejoFicheros {
                         a = listAlumnos.get(i);
                         System.out.println("Nombre: " + a.getNombre() + " Apellidos: " + a.getApellidos() + " Edad: " + a.getEdad() + " Curso: " + a.getCurso());
                     }
+
                 }
             } catch (EOFException e) {
                 System.out.println("Fin de fichero 2* " + e.toString());
@@ -124,7 +122,18 @@ public class ManejoFicheros {
                 }
             }
         }else{
-            System.out.println("Fichero con ese nombre no encontrado ******");
+            System.out.println("Fichero con ese nombre no encontrado, primero tienes que crearlo. ******");
+            System.out.println("Los ficheros que exiten son: ");
+            File fichero = new File("C:\\Users\\I B M\\Documents\\zemedu\\Dom_01");
+            File[] listFile =  fichero.listFiles();
+            for (int i=0; i < listFile.length; i++){
+                if (listFile[i].isFile()){
+                    if (listFile[i].getName().endsWith(".dat"))
+                        System.out.println("--> " + listFile[i].getName());
+
+                }
+            }
+
         }
     }
 }
