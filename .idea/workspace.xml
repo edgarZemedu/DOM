@@ -44,14 +44,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="dom_Alumnos" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dom_recorrerElArbol" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="SAX" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dom_recorrerElArbol.Main" />
       <module name="Dom_01" />
@@ -78,6 +81,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SAX.Main" />
+      <module name="Dom_01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SAX.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dom_personas.Main" />
       <module name="Dom_01" />
@@ -93,9 +109,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -123,46 +140,46 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="403" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.984@0.0.1280.984" timestamp="1611879058264" />
-    <state x="445" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1611866307522">
+    <state x="445" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1613066064676">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="445" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1611866307522" />
+    <state x="445" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1280.984@0.0.1280.984" timestamp="1613066064676" />
     <state x="395" y="195" key="#xdebugger.evaluate" timestamp="1611884334202">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="395" y="195" key="#xdebugger.evaluate/0.0.1280.984@0.0.1280.984" timestamp="1611884334202" />
-    <state width="1237" height="322" key="GridCell.Tab.0.bottom" timestamp="1612277529417">
+    <state width="1237" height="322" key="GridCell.Tab.0.bottom" timestamp="1613071557662">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1612277529417" />
-    <state width="1237" height="322" key="GridCell.Tab.0.center" timestamp="1612277529417">
+    <state width="1237" height="322" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1613071557662" />
+    <state width="1237" height="322" key="GridCell.Tab.0.center" timestamp="1613071557662">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1612277529417" />
-    <state width="1237" height="322" key="GridCell.Tab.0.left" timestamp="1612277529417">
+    <state width="1237" height="322" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1613071557662" />
+    <state width="1237" height="322" key="GridCell.Tab.0.left" timestamp="1613071557662">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1612277529417" />
-    <state width="1237" height="322" key="GridCell.Tab.0.right" timestamp="1612277529417">
+    <state width="1237" height="322" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1613071557662" />
+    <state width="1237" height="322" key="GridCell.Tab.0.right" timestamp="1613071557662">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1612277529417" />
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1612271501452">
+    <state width="1237" height="322" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1613071557662" />
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1612279562084">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1612271501452" />
-    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1612271501452">
+    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1612279562084" />
+    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1612279562068">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1612271501452" />
-    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1612271501452">
+    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1612279562068" />
+    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1612279562068">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1612271501452" />
-    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1612271501452">
+    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1612279562068" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1612279562068">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1612271501452" />
+    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1612279562068" />
     <state x="411" y="286" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611856165002">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -175,6 +192,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="43" y="100" width="1253" height="971" key="dock-window-1/0.0.1280.984@0.0.1280.984" timestamp="1611860964251" />
+    <state x="22" y="112" key="new project wizard" timestamp="1612814034206">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="22" y="112" key="new project wizard/0.0.1280.984@0.0.1280.984" timestamp="1612814034206" />
     <state x="340" y="249" key="refactoring.ChangeSignatureDialog" timestamp="1612271705850">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -183,16 +204,5 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="296" y="226" key="run.anything.popup/0.0.1280.984@0.0.1280.984" timestamp="1612277091839" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dom_Alumnos/Main.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
