@@ -45,30 +45,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="dom_Alumnos" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dom_recorrerElArbol" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="SAX" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dom_recorrerElArbol.Main" />
-      <module name="Dom_01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dom_recorrerElArbol.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (5)">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dom_Alumnos.Main" />
       <module name="Dom_01" />
@@ -121,13 +108,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="XPath.Main" />
+      <module name="Dom_01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="XPath.MostrarXML" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -163,46 +163,50 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="379" y="268" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.984@0.0.1280.984" timestamp="1613073011360" />
+    <state x="351" y="299" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1613848758347">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="351" y="299" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1280.984@0.0.1280.984" timestamp="1613848758347" />
     <state x="395" y="195" key="#xdebugger.evaluate" timestamp="1611884334202">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="395" y="195" key="#xdebugger.evaluate/0.0.1280.984@0.0.1280.984" timestamp="1611884334202" />
-    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1613433283673">
+    <state x="420" y="247" key="FileChooserDialogImpl" timestamp="1613651361546">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1613433283673" />
-    <state width="1237" height="322" key="GridCell.Tab.0.bottom" timestamp="1613612673117">
+    <state x="420" y="247" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1613651361546" />
+    <state width="1237" height="322" key="GridCell.Tab.0.bottom" timestamp="1613862394594">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1613612673117" />
-    <state width="1237" height="322" key="GridCell.Tab.0.center" timestamp="1613612673117">
+    <state width="1237" height="322" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1613862394594" />
+    <state width="1237" height="322" key="GridCell.Tab.0.center" timestamp="1613862394594">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1613612673117" />
-    <state width="1237" height="322" key="GridCell.Tab.0.left" timestamp="1613612673117">
+    <state width="1237" height="322" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1613862394594" />
+    <state width="1237" height="322" key="GridCell.Tab.0.left" timestamp="1613862394594">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1613612673117" />
-    <state width="1237" height="322" key="GridCell.Tab.0.right" timestamp="1613612673117">
+    <state width="1237" height="322" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1613862394594" />
+    <state width="1237" height="322" key="GridCell.Tab.0.right" timestamp="1613862394594">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="322" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1613612673117" />
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom" timestamp="1612279562084">
+    <state width="1237" height="322" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1613862394594" />
+    <state width="1237" height="326" key="GridCell.Tab.1.bottom" timestamp="1613861656654">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1612279562084" />
-    <state width="1237" height="325" key="GridCell.Tab.1.center" timestamp="1612279562068">
+    <state width="1237" height="326" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1613861656654" />
+    <state width="1237" height="326" key="GridCell.Tab.1.center" timestamp="1613861656654">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1612279562068" />
-    <state width="1237" height="325" key="GridCell.Tab.1.left" timestamp="1612279562068">
+    <state width="1237" height="326" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1613861656654" />
+    <state width="1237" height="326" key="GridCell.Tab.1.left" timestamp="1613861656654">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1612279562068" />
-    <state width="1237" height="325" key="GridCell.Tab.1.right" timestamp="1612279562068">
+    <state width="1237" height="326" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1613861656654" />
+    <state width="1237" height="326" key="GridCell.Tab.1.right" timestamp="1613861656654">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="325" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1612279562068" />
+    <state width="1237" height="326" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1613861656654" />
     <state x="411" y="286" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611856165002">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -215,14 +219,14 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="43" y="100" width="1253" height="971" key="dock-window-1/0.0.1280.984@0.0.1280.984" timestamp="1611860964251" />
-    <state x="22" y="112" key="new project wizard" timestamp="1612814034206">
+    <state x="22" y="112" key="new project wizard" timestamp="1613651420897">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="22" y="112" key="new project wizard/0.0.1280.984@0.0.1280.984" timestamp="1612814034206" />
-    <state x="340" y="249" key="refactoring.ChangeSignatureDialog" timestamp="1612271705850">
+    <state x="22" y="112" key="new project wizard/0.0.1280.984@0.0.1280.984" timestamp="1613651420897" />
+    <state x="340" y="249" key="refactoring.ChangeSignatureDialog" timestamp="1613835741418">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="340" y="249" key="refactoring.ChangeSignatureDialog/0.0.1280.984@0.0.1280.984" timestamp="1612271705850" />
+    <state x="340" y="249" key="refactoring.ChangeSignatureDialog/0.0.1280.984@0.0.1280.984" timestamp="1613835741418" />
     <state x="296" y="226" key="run.anything.popup" timestamp="1612277091839">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
